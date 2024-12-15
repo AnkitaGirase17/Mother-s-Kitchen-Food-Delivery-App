@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MothersKitchenClient",
+    "\\MothersKitchenClient\\MothersKitchenClient",
+    "\\MothersKitchenClient\\MothersKitchenClient\\MothersKitchenClient",
+    "\\MothersKitchenClient\\MothersKitchenClient\\MothersKitchenClient.iOS",
+    "\\MothersKitchenClient\\MothersKitchenClient\\MothersKitchenClient.iOS\\Assets.xcassets",
+    "\\MothersKitchenClient\\MothersKitchenClient\\MothersKitchenClient.iOS\\Properties",
+    "\\MothersKitchenClient\\MothersKitchenClient\\MothersKitchenClient.iOS\\Resources"
+  ],
+  "SelectedNode": "\\MothersKitchenClient\\MothersKitchenClient\\MothersKitchenClient\\App.xaml",
+  "PreviewInSolutionExplorer": false
+}
