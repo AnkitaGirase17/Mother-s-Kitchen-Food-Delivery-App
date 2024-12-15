@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasBackButton="False"
+             Title="Welcome to Mother's Kitchen"
+             x:Class="MothersKitchenClient.onLogin.HomePage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Logout" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Frame Margin="5,-5,5,0" BackgroundColor="#f8fff8" BorderColor="LightGray" Padding="0">
+
+                <CollectionView BackgroundColor="#f8fff8" x:Name="CategoryCollectionView" SelectionMode="Single" HeightRequest="120"  SelectionChanged="CategoryCollectionView_SelectionChanged">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal" />
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+
+                            <StackLayout Padding="5">
+                                <Image HeightRequest="70" Source="{Binding CATIMAGE}" />
+                                <Label Text="{Binding CATNAME}" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Micro"/>
+                                <Label Text="{Binding CATID}" IsVisible="False"/>
+
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup Name="CommonStates">
+                                        <VisualState Name="Normal" />
+                                        <VisualState Name="Selected">
+                                            <VisualState.Setters>
+                                                <Setter Property="BackgroundColor" Value="#f8fff8" />
+                                            </VisualState.Setters>
+                                        </VisualState>
+
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                            </StackLayout>
+
+
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Frame>
+
+            <ListView x:Name="ItemsListView"  HasUnevenRows="True" SeparatorVisibility="None" IsPullToRefreshEnabled="True" ItemTapped="ItemsListView_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame Margin="5" BorderColor="LightGray">
+                                <Grid>
+                                    <!--<Grid.ColumnDefinitions>
+                             <ColumnDefinition Width="100" />
+                             <ColumnDefinition Width="*" />
+                         </Grid.ColumnDefinitions>-->
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="350"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Frame BorderColor="Transparent" Padding="5">
+                                        <Image Source="{Binding ICON}" WidthRequest="350" HeightRequest="350" Aspect="Fill" HorizontalOptions="CenterAndExpand"/>
+                                    </Frame>
+
+                                    <StackLayout Margin="10,0,0,10" Spacing="0" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="1">
+                                        <StackLayout VerticalOptions="CenterAndExpand">
+                                            <Label Text="{Binding IID}" IsVisible="FALSE" FontAttributes="Bold" FontFamily="RB"/>
+                                            <Label Text="{Binding CATID}" IsVisible="FALSE" FontAttributes="Bold" FontFamily="RB"/>
+                                            <Label Text="{Binding INAME}" FontAttributes="Bold" FontFamily="RB"/>
+                                            <Label Text="{Binding BRIEF}" FontSize="Micro" />
+                                            <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
+                                                <Label Text="₹" TextColor="Green" FontAttributes="Bold" Margin="0,0,-5,0"/>
+                                                <Label Text="{Binding SP}" TextColor="Green" FontAttributes="Bold"/>
+                                                <Label Text="M.R.P. ₹" HorizontalOptions="EndAndExpand" TextColor="Gray" FontSize="Micro" FontAttributes="Bold" VerticalOptions="CenterAndExpand" Margin="0,0,-5,0"/>
+                                                <Label Text="{Binding MRP}" VerticalOptions="CenterAndExpand" Margin="0,0,5,0" FontSize="Micro" TextColor="Gray"  />
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>
+
+                            </Frame>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackLayout VerticalOptions="EndAndExpand" Padding="-15, 0, -15, -5">
+
+                <Frame BackgroundColor="#333" Padding="12" >
+                    <StackLayout Orientation="Horizontal" >
+                        <StackLayout HorizontalOptions="FillAndExpand">
+                            <Image x:Name="Home_Image"  HeightRequest="30" HorizontalOptions="FillAndExpand">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="Home_Image_Tapped" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <Label Text="Home" HorizontalTextAlignment="Center" FontSize="Micro" TextColor="#fff" Margin="0,-5,0,0"/>
+                        </StackLayout>
+
+                        <StackLayout HorizontalOptions="FillAndExpand">
+                            <Image x:Name="Order_Image"  HeightRequest="30" HorizontalOptions="FillAndExpand">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="Order_Image_Tapped" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <Label Text="Orders" HorizontalTextAlignment="Center" FontSize="Micro" TextColor="#fff" Margin="0,-5,0,0"/>
+                        </StackLayout>
+
+                        <StackLayout HorizontalOptions="FillAndExpand">
+
+                            <Image x:Name="Offers_Image"  HeightRequest="30" HorizontalOptions="FillAndExpand">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="Offers_Image_Tapped" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <Label Text="Offers" HorizontalTextAlignment="Center" FontSize="Micro" TextColor="#fff" Margin="0,-5,0,0"/>
+                        </StackLayout>
+
+                        <StackLayout HorizontalOptions="FillAndExpand">
+                            <Image x:Name="Cart_Image"  HeightRequest="30" HorizontalOptions="FillAndExpand">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="Cart_Image_Tapped" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <Label Text="Cart" HorizontalTextAlignment="Center" FontSize="Micro" TextColor="#fff" Margin="0,-5,0,0"/>
+
+                            <Label Margin="0,-45,0,0"  Text="0" x:Name="CartValue_Label" FontAttributes="Bold" HorizontalTextAlignment="Center" FontSize="Micro" TextColor="Yellow" >
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="CartValueLabel_Tapped" />
+                                </Label.GestureRecognizers>
+                            </Label>
+                        </StackLayout>
+
+                        <StackLayout HorizontalOptions="FillAndExpand">
+
+                            <Image x:Name="Profile_Image"  HeightRequest="30" HorizontalOptions="FillAndExpand">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="Profile_Image_Tapped" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <Label Text="Profile" HorizontalTextAlignment="Center" TextColor="#fff" Margin="0,-5,0,0" FontSize="Micro" />
+                        </StackLayout>
+
+
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Visual="Material"
+             Title="My Profile"
+             x:Class="MothersKitchenClient.onLogin.ProfilePage">
+    <ContentPage.Content>
+        <StackLayout Padding="5">
+            <Frame Padding="5">
+                <StackLayout>
+                    <Frame>
+                        <Entry x:Name="Name_entry" Text="Miss Ankita Narayansing Girase" FontSize="Large" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                    </Frame>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Mobile:" FontSize="Large" FontAttributes="Bold" VerticalTextAlignment="Center"/>
+                        <Frame HorizontalOptions="FillAndExpand">
+                            <Entry x:Name="mobile_entry" Text="7666814032" IsEnabled="False" FontSize="Large" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"/>
+                        </Frame>
+                    </StackLayout>
+                    
+                    <Button Text="Update Personal Information"/>
+
+                </StackLayout>
+            </Frame>
+            <Label Text="Delivery Address" Padding="2" FontSize="Medium" FontAttributes="Bold"/>
+            <Frame Padding="5">
+                <StackLayout>
+                    <Label x:Name="Cname_entry" Text="Miss Ankita Narayansing Girase" FontSize="Header" FontAttributes="Bold" />
+                    <Label x:Name="Adl1" TextColor="LightGray"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="City: " TextColor="LightGray"/>
+                        <Label Text="Dhule" x:Name="city_entry" TextColor="LightGray"/>
+                        <Label Text="State:" HorizontalOptions="EndAndExpand" TextColor="LightGray"/>
+                        <Label Text="Maharashtra" x:Name="state_entry" TextColor="LightGray"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="PIN:" TextColor="LightGray"/>
+                        <Label Text="424002" x:Name="pin_entry" TextColor="LightGray"/>
+                        <Label Text="Mobile:" HorizontalOptions="EndAndExpand" TextColor="LightGray"/>
+                        <Label Text="7666814032" x:Name="mobilr_entry" VerticalTextAlignment="Center" TextColor="LightGray"/>
+                    </StackLayout>
+                    <Frame BackgroundColor="Gray">
+                        <Label Text="Defult" x:Name="status_entry" FontSize="Medium" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                    </Frame>
+                </StackLayout>
+            </Frame>
+            <Button Text="Add Delivery Address " Clicked="Button_Clicked" VerticalOptions="EndAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

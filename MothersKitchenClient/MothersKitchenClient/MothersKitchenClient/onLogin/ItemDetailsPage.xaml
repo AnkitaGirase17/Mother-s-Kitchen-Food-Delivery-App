@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Visual="Material"
+             Title="" x:Name="title"
+             x:Class="MothersKitchenClient.onLogin.ItemDetailsPage">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <!--ESSENTIALS-->
+
+            <Label x:Name="CATID_Label" IsVisible="False"/>
+            <Label x:Name="UID_Label" IsVisible="False"/>
+            <Label x:Name="IID_Label" IsVisible="False"/>
+            <Label x:Name="OID_Label" IsVisible="False"/>
+
+            <!--END OF ESSENTIALS-->
+            <Frame BorderColor="LightGray" Padding="10">
+                <StackLayout>
+                    <Label Text="" x:Name="ProductName_Entry" FontAttributes="Bold"/>
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand">
+
+                        <Label Text="₹" TextColor="Green" Margin="0,0,-5,0" FontAttributes="Bold" HorizontalOptions="Start"/>
+                        <Label Text="" x:Name="SP_Entry" TextColor="Green" FontAttributes="Bold"/>
+                        <Label Text="M.R.P. ₹" TextColor="Gray" HorizontalOptions="EndAndExpand" Margin="0,0,-5,0" FontSize="Micro" VerticalOptions="CenterAndExpand" />
+                        <Label Text="MRP" x:Name="MRP_Entry" VerticalOptions="CenterAndExpand" HorizontalOptions="End" FontSize="Micro" TextColor="Gray"  />
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <Frame BorderColor="LightGray" Padding="10">
+                <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                <StackLayout Orientation="Horizontal">
+                    <!--<CarouselView x:Name="ItemsImages_CV" IndicatorView="indicatorView" Loop="True" HeightRequest="300" IsScrollAnimated="True"  HorizontalScrollBarVisibility="Never" IsSwipeEnabled="True">
+                        <CarouselView.ItemTemplate>
+                            <DataTemplate>-->
+                                <Image x:Name="iTEMiMAGE" Aspect="AspectFill" HeightRequest="300" WidthRequest="350" />
+                                <Image x:Name="img1" Aspect="AspectFill" HeightRequest="300" WidthRequest="350" />
+                                <Image x:Name="img2" Aspect="AspectFill" HeightRequest="300" WidthRequest="350"/>
+
+                    <!--</DataTemplate>
+                        </CarouselView.ItemTemplate>
+                    </CarouselView>
+                    <IndicatorView x:Name="indicatorView"
+       IndicatorColor="LightGray"
+       SelectedIndicatorColor="DarkGray"
+       HorizontalOptions="Center" />-->
+                </StackLayout>
+                </ScrollView>
+            </Frame>
+
+            <Frame Padding="10" BorderColor="LightGray" >
+                <ScrollView>
+                    <StackLayout>
+                        <Label Text="Content/Description: " FontAttributes="Bold"/>
+                        <Label Text="" x:Name="Contents_Entry" TextColor="Gray"/>
+
+                        <Label Text="Allergic Information: " FontAttributes="Bold"/>
+                        <Label Text="" x:Name="AI_Entry" TextColor="Gray"/>
+
+                        <Label Text="Brief :" FontAttributes="Bold"/>
+                        <Label Text="" x:Name="Brief_Entry" TextColor="Gray"/>
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
+
+            <Frame Padding="10" VerticalOptions="EndAndExpand">
+                <StackLayout Orientation="Horizontal" Padding="5">
+                    <!--<Stepper x:Name="Qt_Stepper"  Minimum="0" Maximum="100" Increment="1" ValueChanged="Qt_Stepper_ValueChanged" />-->
+                    <Button Text="-" x:Name="QT_DECREAMENT_BUTTON" Clicked="QT_DECREAMENT_BUTTON_Clicked" HeightRequest="35" WidthRequest="50" FontAttributes="Bold" />
+                    <Button Text="+" x:Name="QT_INCREAMENT_BUTTON" Clicked="QT_INCREAMENT_BUTTON_Clicked" HeightRequest="35" WidthRequest="50" FontAttributes="Bold" />
+                    <Label Text="Quantity: " FontAttributes="Bold"  VerticalOptions="CenterAndExpand"/>
+                    <Label HorizontalOptions="End" Text="0" x:Name="QT_Label"  FontAttributes="Bold" VerticalOptions="CenterAndExpand" />
+                    <Label HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand" Text="₹" TextColor="Navy" Margin="0,0,-5,0" FontAttributes="Bold"/>
+                    <Label  x:Name="TotalAmount_Label"  Text="0" VerticalOptions="CenterAndExpand" TextColor="Navy" FontAttributes="Bold" Margin='0,0,10,0'/>
+                </StackLayout>
+            </Frame>
+            <Button x:Name="AddToCart_Button" Text="+ Add To Cart" Clicked="AddToCart_Button_Clicked" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MothersKitchenClient.onLogin.CartPage">
+    <ContentPage.Content>
+        <StackLayout Padding="5">
+            <Frame Padding="5">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Ordered ID" FontSize="Body" FontAttributes="Bold"/>
+                    <Label Text="" x:Name="OID_entry" FontSize="Body" FontAttributes="Bold" />
+                    <Label Text="Total" HorizontalOptions="EndAndExpand"  FontSize="Body"/>
+                    <Label Text="₹" FontSize="Body"/>
+                    <Label Text="" FontSize="Body" x:Name="Total_amt" TextColor="Green"/>
+                </StackLayout>
+            </Frame>
+            <Frame Padding="5">
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Shipiing Addresss" FontSize="Body" FontAttributes="Bold"/>
+                        <Label Text="Change" HorizontalOptions="EndAndExpand" FontSize="Body" FontAttributes="Bold" TextColor="Purple" />
+                    </StackLayout>
+                    <Label x:Name="Cname_entry" Text="Miss Ankita Narayansing Girase" FontSize="Medium"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label x:Name="adl1_entry" Text="" FontSize="Medium"/>
+                        <Label x:Name="adl2_entry" Text="" FontSize="Medium"/>
+                        <Label x:Name="adl3_entry" Text="" FontSize="Medium"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label x:Name="city_entry" Text="" FontSize="Medium"/>
+                        <Label x:Name="state_entry" Text="" FontSize="Medium"/>
+                        <Label x:Name="pin_entry" Text="" FontSize="Medium"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <Frame>
+                <StackLayout  Orientation="Horizontal">
+                    <Image x:Name="CImage"  HeightRequest="150" WidthRequest="150">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <StackLayout>
+                        <Label x:Name="Iname_entry" Text="Khapar Puranpoli" FontSize="Medium" FontAttributes="Bold"/>
+                        <Label x:Name="SP_entry" Text="80" FontSize="Medium"/>
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Quntity:" FontSize="Medium" FontAttributes="Bold"/>
+                                <Label x:Name="QT_entry" Text="2" FontSize="Medium" FontAttributes="Bold"/>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="₹" TextColor="Green" />   
+                                <Label x:Name="SaleP_entry" Text="80" Margin="-500,0,0,0" TextColor="Green" HorizontalOptions="EndAndExpand" />
+
+                            </StackLayout>
+                            
+                        </StackLayout>
+
+                    </StackLayout>
+                </StackLayout>
+
+            </Frame>
+
+            <Button x:Name="Placeorder_btn" Text="PLace Order" BackgroundColor="Green" VerticalOptions="EndAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

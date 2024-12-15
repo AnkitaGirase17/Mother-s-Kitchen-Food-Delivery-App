@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Visual="Material"
+             Title="Your Order History"
+             x:Class="MothersKitchenClient.onLogin.OrdersList">
+    <ContentPage.Content>
+        <StackLayout Padding="5">
+            <Frame Padding="5" BorderColor="LightGray">
+                <StackLayout>
+                    
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Order Id #"/>
+                        <Label Text="195327" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Order Status"/>
+                        <Label Text="Order Pending Accept" TextColor="LightGray"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Order On"/>
+                        <Label Text="31-5-2024" TextColor="LightGray"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Total Item Ordered:"/>
+                        <Label Text="3" TextColor="LightGray"/>
+                    </StackLayout>
+                  
+                </StackLayout>
+            </Frame>
+            <Frame Padding="5" BorderColor="LightGray">
+                <StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Order Id #"/>
+                        <Label Text="1952357" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Order Status"/>
+                        <Label Text="Order Pending Accept" TextColor="LightGray"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Order On"/>
+                        <Label Text="30-5-2024" TextColor="LightGray"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Total Item Ordered:"/>
+                        <Label Text="1" TextColor="LightGray"/>
+                    </StackLayout>
+
+                </StackLayout>
+            </Frame>
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

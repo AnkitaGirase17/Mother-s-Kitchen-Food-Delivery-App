@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="True"
+             NavigationPage.BackButtonTitle="{Binding CATNAME}"
+             x:Class="MothersKitchenClient.onLogin.DtailPage">
+    <ContentPage.Content>
+        <StackLayout Padding="5">
+            <Frame Padding="5">
+                <StackLayout>
+                    <Label Text="{Binding INAME}" FontSize="Medium" FontAttributes="Bold"/>
+                    <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
+                        <Label Text="₹" TextColor="Green" FontAttributes="Bold" Margin="0,0,-5,0"/>
+                        <Label Text="{Binding SP}" TextColor="Green" FontAttributes="Bold"/>
+                        <Label Text="M.R.P. ₹" HorizontalOptions="EndAndExpand" TextColor="Gray" FontSize="Micro" FontAttributes="Bold" VerticalOptions="CenterAndExpand" Margin="0,0,-5,0"/>
+                        <Label Text="{Binding MRP}" VerticalOptions="CenterAndExpand" Margin="0,0,5,0" FontSize="Micro" TextColor="Gray"  />
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame>
+            <ScrollView Orientation="Horizontal">
+                    <StackLayout HeightRequest="350">
+                    <CarouselView>
+                        <CarouselView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Image HeightRequest="300" />
+                                </ViewCell>
+                            </DataTemplate>
+                        </CarouselView.ItemTemplate>
+
+                    </CarouselView>
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
+            <Frame Padding="5">
+                <ScrollView>
+                <StackLayout>
+                    <Label Text="Home Maker:" FontAttributes="Bold" FontSize="Body" />
+                        <Label Text="{Binding CONTENTS}"  TextColor="Gray" FontSize="Subtitle"/>
+                        <Label Text="Allergic Information:" FontAttributes="Bold" FontSize="Body"/>
+                        <Label Text="{Binding AI}" TextColor="Gray" FontSize="Subtitle" />
+                        <Label Text="Brief:"  FontAttributes="Bold" FontSize="Body"/>
+                        <Label Text="{Binding BRIEF}" TextColor="Gray" FontSize="Subtitle"/>
+                   
+                </StackLayout>
+                </ScrollView>
+            </Frame>
+            <Frame>
+                <StackLayout Orientation="Horizontal" Padding="5">
+
+                    <Button x:Name="delete_qt_btn" Text="-"  FontAttributes="Bold"  Clicked="delete_qt_btn_Clicked"  FontSize="25"  WidthRequest="50" />
+                    <Button x:Name="add_qt_btn"    Text="+"  FontAttributes="Bold"  Clicked="add_qt_btn_Clicked"     FontSize="25"  WidthRequest="50" />
+
+                    <Label Text="Quantiy :" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" HeightRequest="45" />
+
+                    <Label x:Name="quntityEntry" Text="0" Margin="-50,0,60,0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"  HeightRequest="45" WidthRequest="100" />
+
+                    <Label Text="₹"   VerticalTextAlignment="Center" />
+                    <Label Text="{Binding SP}" HorizontalOptions="EndAndExpand" FontSize="Header" VerticalTextAlignment="Center" TextColor="Green" />
+                </StackLayout>
+            </Frame>
+            <Button Text="Add to Cart" x:Name="Add_to_cart_btn" Clicked="Add_to_cart_btn_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

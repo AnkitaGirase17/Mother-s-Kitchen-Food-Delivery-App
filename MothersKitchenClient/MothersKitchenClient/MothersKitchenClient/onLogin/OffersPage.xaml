@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Visual="Material"
+             NavigationPage.HasNavigationBar="True"
+             Title="Offers"
+             x:Class="MothersKitchenClient.onLogin.OffersPage">
+    <ContentPage.Content>
+        <StackLayout Padding="5">
+
+            <Frame>
+                <StackLayout  Orientation="Horizontal">
+                    <Image x:Name="Offer_img" HeightRequest="50"/>
+                    <StackLayout>
+                        <Label  Text="Khapar Puranpoli" FontSize="Medium" FontAttributes="Bold"/>
+                        <Label  Text="80" FontSize="Medium"/>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Discount:" FontSize="Medium" FontAttributes="Bold"/>
+                            <Label  Text="10%" FontSize="Medium" FontAttributes="Bold"/>
+                            <Label Text="₹" TextColor="Green" HorizontalOptions="EndAndExpand"/>
+                            <Label  Text="72" TextColor="Green" />
+
+                        </StackLayout>
+
+                    </StackLayout>
+                </StackLayout>
+
+            </Frame>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
