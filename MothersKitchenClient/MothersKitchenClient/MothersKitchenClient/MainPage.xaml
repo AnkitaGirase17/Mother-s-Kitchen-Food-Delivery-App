@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="MothersKitchenClient.MainPage">
+
+    <StackLayout Padding="15" VerticalOptions="CenterAndExpand">
+
+        <Image x:Name="AppLogo_Image" />
+
+        <Label Text="Welcome To Mother's Kitchen. Taste Of Trust" HorizontalTextAlignment="Center"/>
+        <StackLayout x:Name="MobileStack">
+
+            <Frame>
+                <Entry Placeholder="Enter Your Mobile Number" Keyboard="Numeric" x:Name="Mobile_Entry" MaxLength="10"/>
+            </Frame>
+
+            <Button x:Name="Login_Button" Text="Validate Mobile" Clicked="Login_Button_Clicked"/>
+        </StackLayout>
+
+        <StackLayout x:Name="OTPStack" IsVisible="False">
+            <Label Text="Enter the OTP Received On Your Mobile Number" HorizontalTextAlignment="Center" />
+
+            <StackLayout Orientation="Horizontal">
+                <Frame HorizontalOptions="FillAndExpand">
+                    <Entry MaxLength="1" Keyboard="Numeric" x:Name="FN" />
+                </Frame>
+
+                <Frame HorizontalOptions="FillAndExpand">
+                    <Entry MaxLength="1" Keyboard="Numeric" x:Name="SN"/>
+                </Frame>
+
+                <Frame HorizontalOptions="FillAndExpand">
+                    <Entry MaxLength="1" Keyboard="Numeric"  x:Name="TN"/>
+                </Frame>
+
+                <Frame HorizontalOptions="FillAndExpand">
+                    <Entry MaxLength="1" Keyboard="Numeric" x:Name="FTN"/>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Verify OTP" x:Name="VerifyOTP_Button" Clicked="VerifyOTP_Button_Clicked" HorizontalOptions="FillAndExpand" />
+                <Button Text="Cancel" x:Name="CancelOTP_Button" Clicked="CancelOTP_Button_Clicked" HorizontalOptions="FillAndExpand" BackgroundColor="Red"/>
+            </StackLayout>
+
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

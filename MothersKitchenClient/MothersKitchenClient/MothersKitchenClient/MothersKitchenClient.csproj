@@ -1,0 +1,71 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <ProduceReferenceAssemblyInOutDir>true</ProduceReferenceAssemblyInOutDir>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="img\cart.png" />
+    <None Remove="img\contact.png" />
+    <None Remove="img\home.png" />
+    <None Remove="img\items.png" />
+    <None Remove="img\mk.png" />
+    <None Remove="img\offers.png" />
+    <None Remove="img\order.png" />
+    <None Remove="img\puranpoli_01.jpg" />
+    <None Remove="img\user.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="img\cart.png" />
+    <EmbeddedResource Include="img\contact.png" />
+    <EmbeddedResource Include="img\home.png" />
+    <EmbeddedResource Include="img\items.png" />
+    <EmbeddedResource Include="img\mk.png" />
+    <EmbeddedResource Include="img\offers.png" />
+    <EmbeddedResource Include="img\order.png" />
+    <EmbeddedResource Include="img\puranpoli_01.jpg" />
+    <EmbeddedResource Include="img\user.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2662" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.8.1" />
+    <PackageReference Include="Xamarin.Forms.Visual.Material" Version="5.0.0.2662" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="onLogin\AddAddressPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="onLogin\CartPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="onLogin\DtailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="onLogin\HomePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="onLogin\ItemDetailsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="onLogin\OffersPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="onLogin\OrdersList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="onLogin\ProfilePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

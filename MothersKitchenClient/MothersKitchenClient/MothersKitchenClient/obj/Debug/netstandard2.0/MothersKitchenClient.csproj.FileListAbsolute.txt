@@ -1,0 +1,44 @@
+D:\2024 PROJECTS\MothersKitchen\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\bin\Debug\netstandard2.0\MothersKitchenClient.deps.json
+D:\2024 PROJECTS\MothersKitchen\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\bin\Debug\netstandard2.0\MothersKitchenClient.dll
+D:\2024 PROJECTS\MothersKitchen\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\bin\Debug\netstandard2.0\ref\MothersKitchenClient.dll
+D:\2024 PROJECTS\MothersKitchen\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\bin\Debug\netstandard2.0\MothersKitchenClient.pdb
+D:\2024 PROJECTS\MothersKitchen\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\MothersKitchenClient.csproj.AssemblyReference.cache
+D:\2024 PROJECTS\MothersKitchen\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\MothersKitchenClient.GeneratedMSBuildEditorConfig.editorconfig
+D:\2024 PROJECTS\MothersKitchen\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\2024 PROJECTS\MothersKitchen\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\2024 PROJECTS\MothersKitchen\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\MothersKitchenClient.AssemblyInfoInputs.cache
+D:\2024 PROJECTS\MothersKitchen\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\MothersKitchenClient.AssemblyInfo.cs
+D:\2024 PROJECTS\MothersKitchen\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\MothersKitchenClient.csproj.CoreCompileInputs.cache
+D:\2024 PROJECTS\MothersKitchen\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\XamlC.stamp
+D:\2024 PROJECTS\MothersKitchen\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\MothersKitchenClient.dll
+D:\2024 PROJECTS\MothersKitchen\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\refint\MothersKitchenClient.dll
+D:\2024 PROJECTS\MothersKitchen\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\MothersKitchenClient.pdb
+D:\2024 PROJECTS\MothersKitchen\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\onLogin\HomePage.xaml.g.cs
+D:\2024 PROJECTS\MothersKitchen\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\onLogin\CartPage.xaml.g.cs
+D:\2024 PROJECTS\MothersKitchen\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\onLogin\OffersPage.xaml.g.cs
+D:\2024 PROJECTS\MothersKitchen\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\onLogin\OrdersList.xaml.g.cs
+D:\2024 PROJECTS\MothersKitchen\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\onLogin\ProfilePage.xaml.g.cs
+D:\2024 PROJECTS\MothersKitchen\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\onLogin\ItemDetailsPage.xaml.g.cs
+C:\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\bin\Debug\netstandard2.0\MothersKitchenClient.deps.json
+C:\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\bin\Debug\netstandard2.0\MothersKitchenClient.dll
+C:\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\bin\Debug\netstandard2.0\ref\MothersKitchenClient.dll
+C:\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\bin\Debug\netstandard2.0\MothersKitchenClient.pdb
+C:\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\MothersKitchenClient.csproj.AssemblyReference.cache
+C:\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\MothersKitchenClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\onLogin\CartPage.xaml.g.cs
+C:\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\onLogin\HomePage.xaml.g.cs
+C:\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\onLogin\ItemDetailsPage.xaml.g.cs
+C:\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\onLogin\OffersPage.xaml.g.cs
+C:\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\onLogin\OrdersList.xaml.g.cs
+C:\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\onLogin\ProfilePage.xaml.g.cs
+C:\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\MothersKitchenClient.AssemblyInfoInputs.cache
+C:\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\MothersKitchenClient.AssemblyInfo.cs
+C:\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\MothersKitchenClient.csproj.CoreCompileInputs.cache
+C:\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\XamlC.stamp
+C:\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\MothersKitchenClient.dll
+C:\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\refint\MothersKitchenClient.dll
+C:\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\MothersKitchenClient.pdb
+C:\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\onLogin\DtailPage.xaml.g.cs
+C:\MothersKitchenClient\MothersKitchenClient\MothersKitchenClient\obj\Debug\netstandard2.0\onLogin\AddAddressPage.xaml.g.cs

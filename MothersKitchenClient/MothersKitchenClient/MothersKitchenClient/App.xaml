@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MothersKitchenClient.App">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#000" />
+                <Setter Property="TextColor" Value="#fff" />
+                <Setter Property="Visual" Value="Material" />
+                <Setter Property="FontFamily" Value="RR" />
+                <Setter Property="HeightRequest" Value="45" />
+                <Setter Property="CornerRadius" Value="6" />
+            </Style>
+
+            <Style TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="#fff" />
+                <Setter Property="TextColor" Value="#000" />
+                <Setter Property="Visual" Value="Material" />
+                <Setter Property="FontFamily" Value="RR" />
+                <Setter Property="HeightRequest" Value="62" />
+                <Setter Property="Margin" Value="0,0,0,-8" />
+            </Style>
+
+            <Style TargetType="Editor">
+                <Setter Property="BackgroundColor" Value="#fff" />
+                <Setter Property="TextColor" Value="#000" />
+                <Setter Property="Visual" Value="Material" />
+                <Setter Property="FontFamily" Value="RR" />
+            </Style>
+
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="#000" />
+                <Setter Property="Visual" Value="Material" />
+                <Setter Property="FontFamily" Value="RR" />
+            </Style>
+
+            <Style TargetType="SearchBar">
+                <Setter Property="TextColor" Value="#000" />
+                <Setter Property="Visual" Value="Material" />
+                <Setter Property="Margin" Value="0,0,0,-1.5" />
+                <Setter Property="BackgroundColor" Value="#e5ffe5" />
+                <Setter Property="FontFamily" Value="RR" />
+            </Style>
+
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarTextColor" Value="#fff" />
+                <Setter Property="BarBackgroundColor" Value="#000" />
+            </Style>
+
+            <Style TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="#fff" />
+            </Style>
+
+            <Style TargetType="Picker">
+                <Setter Property="BackgroundColor" Value="#fff" />
+                <Setter Property="TextColor" Value="#000" />
+                <Setter Property="Visual" Value="Material" />
+                <Setter Property="HeightRequest" Value="55" />
+
+            </Style>
+
+            <Style TargetType="DatePicker">
+                <Setter Property="BackgroundColor" Value="#fff" />
+                <Setter Property="TextColor" Value="#000" />
+                <Setter Property="Visual" Value="Material" />
+            </Style>
+
+            <Style TargetType="TimePicker">
+                <Setter Property="BackgroundColor" Value="#fff" />
+                <Setter Property="TextColor" Value="#000" />
+                <Setter Property="Visual" Value="Material" />
+            </Style>
+
+            <Style TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="#fff" />
+                <Setter Property="Visual" Value="Material" />
+                <Setter Property="HasShadow" Value="False" />
+                <Setter Property="BorderColor" Value="Gray" />
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="CornerRadius" Value="6" />
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
