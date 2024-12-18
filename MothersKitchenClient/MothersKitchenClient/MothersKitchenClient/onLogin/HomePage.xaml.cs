@@ -18,7 +18,10 @@ namespace MothersKitchenClient.onLogin
         public HomePage()
         {
             InitializeComponent();
+           
+                string uid = Application.Current.Properties["UID"].ToString();
 
+         
             Application.Current.Properties["UID"] = "7588318518";
             Home_Image.Source = ImageSource.FromResource("MothersKitchenClient.img.home.png");
             Offers_Image.Source = ImageSource.FromResource("MothersKitchenClient.img.offers.png");
@@ -38,12 +41,12 @@ namespace MothersKitchenClient.onLogin
         public async void GetAllCategorties()
         {
             var client = new HttpClient();
-            var request = new HttpRequestMessage(HttpMethod.Post, "http://192.168.145.77/Client/ShowAllCategories");
+            var request = new HttpRequestMessage(HttpMethod.Post, "http://192.168.223.77/Client/ShowAllCategories");
             var response = await client.SendAsync(request);
             response.EnsureSuccessStatusCode();
             //Console.WriteLine(await response.Content.ReadAsStringAsync());
             var responseContent = await response.Content.ReadAsStringAsync();
-            var JSON_DATA = JsonConvert.DeserializeObject<List<CatClass>>(responseContent);
+            var JSON_DATA = JsonConvert.DeserializeObject<List<CartClass>>(responseContent);
             CategoryCollectionView.ItemsSource = JSON_DATA;
 
         }
@@ -51,7 +54,7 @@ namespace MothersKitchenClient.onLogin
         public async void GetAllItems()
         {
             var client = new HttpClient();
-            var request = new HttpRequestMessage(HttpMethod.Post, "http://192.168.145.77/Client/ShowAllItem");
+            var request = new HttpRequestMessage(HttpMethod.Post, "http://192.168.223.77/Client/ShowAllItem");
             var response = await client.SendAsync(request);
             response.EnsureSuccessStatusCode();
             //Console.WriteLine(await response.Content.ReadAsStringAsync());
@@ -88,7 +91,7 @@ namespace MothersKitchenClient.onLogin
 
         private void Home_Image_Tapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new OffersPage());
+            Navigation.PushAsync(new HomePage());
         }
 
         private void Order_Image_Tapped(object sender, EventArgs e)
@@ -98,7 +101,7 @@ namespace MothersKitchenClient.onLogin
 
         private void Offers_Image_Tapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new OffersPage());
+            Navigation.PushAsync(new OfferPage());
         }
 
         private void Cart_Image_Tapped(object sender, EventArgs e)
@@ -113,6 +116,7 @@ namespace MothersKitchenClient.onLogin
 
         private void Profile_Image_Tapped(object sender, EventArgs e)
         {
+            Application.Current.Properties["UID"] = "";
             Navigation.PushAsync(new ProfilePage());
         }
     }

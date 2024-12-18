@@ -1,19 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MothersKitchenClient.onLogin.CartPage">
+             x:Class="MothersKitchenClient.onLogin.OfferPage">
     <ContentPage.Content>
-        <StackLayout Padding="5">
-            <Frame Padding="5">
-                <StackLayout Orientation="Horizontal">
-                    <Label Text="Ordered ID" FontSize="Body" FontAttributes="Bold"/>
-                    <Label Text="" x:Name="OID_entry" FontSize="Body" FontAttributes="Bold" />
-                    <Label Text="Total" HorizontalOptions="EndAndExpand"  FontSize="Body"/>
-                    <Label Text="₹" FontSize="Body"/>
-                    <Label Text="" FontSize="Body" x:Name="Total_amt" TextColor="Green"/>
-                </StackLayout>
-            </Frame>
-            <ListView x:Name="CartItemsListView"  HasUnevenRows="True" SeparatorVisibility="None" IsPullToRefreshEnabled="True" ItemTapped="ItemsListView_ItemTapped">
+        <StackLayout>
+
+            <ListView x:Name="OfferItemList"  HasUnevenRows="True" SeparatorVisibility="None" IsPullToRefreshEnabled="True" ItemTapped="OfferItemList_ItemTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -51,10 +43,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-
-          
-
-            <Button x:Name="Placeorder_btn" Text="PLace Order" Clicked="Placeorder_btn_Clicked"  BackgroundColor="Green" VerticalOptions="EndAndExpand"/>
+           
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

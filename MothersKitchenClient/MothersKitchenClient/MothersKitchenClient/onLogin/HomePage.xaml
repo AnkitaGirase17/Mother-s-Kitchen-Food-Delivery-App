@@ -50,10 +50,7 @@
                         <ViewCell>
                             <Frame Margin="5" BorderColor="LightGray">
                                 <Grid>
-                                    <!--<Grid.ColumnDefinitions>
-                             <ColumnDefinition Width="100" />
-                             <ColumnDefinition Width="*" />
-                         </Grid.ColumnDefinitions>-->
+                              
 
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="350"/>

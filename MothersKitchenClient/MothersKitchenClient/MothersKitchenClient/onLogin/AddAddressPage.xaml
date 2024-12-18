@@ -6,8 +6,21 @@
              x:Class="MothersKitchenClient.onLogin.AddAddressPage">
   
     <ContentPage.Content >
-        <StackLayout>
-            
+        <StackLayout Padding="20">
+            <Label Text="Add New Delivery Address" FontSize="Large" HorizontalOptions="Center"/>
+
+            <Entry x:Name="ADL1_Entry" Placeholder="Address Line 1" />
+            <Entry x:Name="ADL2_Entry" Placeholder="Address Line 2 (Optional)" />
+            <Entry x:Name="ADL3_Entry" Placeholder="Address Line 3 (Optional)" />
+
+            <Entry x:Name="City_Entry" Placeholder="City" />
+            <Entry x:Name="State_Entry" Placeholder="State" />
+            <Entry x:Name="PIN_Entry" Placeholder="PIN Code" Keyboard="Numeric"/>
+
+            <Button Text="Add Delivery Address" 
+                    Clicked="Add_Delivery_Address_Btn"
+                    BackgroundColor="Green"
+                    TextColor="White"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
