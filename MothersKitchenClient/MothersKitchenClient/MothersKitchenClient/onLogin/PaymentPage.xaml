@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MothersKitchenClient.onLogin.PaymentPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Image x:Name="Payment"  Aspect="AspectFit" HeightRequest="500"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="EndAndExpand">
+                <Label Text="Scan For Payment " FontSize="Header" TextColor="White" BackgroundColor="DimGray"/>
+                <Label  Text="After Payment the Order will be Place"/>
+            </StackLayout>
+        </StackLayout>
+       
+       
+    </ContentPage.Content>
+</ContentPage>
